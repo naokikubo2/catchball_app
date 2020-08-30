@@ -1,25 +1,50 @@
-@import "bootstrap-sprockets";
+//@import "bootstrap-sprockets";
 @import "bootstrap";
 
-/* mixins, variables, etc. */
-
-/* universal */
-
-/* typography */
-
+container{
+    max-width: none !important;
+    min-width: 1200px;
+}
 
 
-/* footer */
+
+$font-family-sans-serif: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro, "ＭＳ Ｐゴシック", sans-serif;
+$headings-line-height: 1.5;
+$line-height-base: 1.65;
+
+$modal-inner-padding: 30px;
+$modal-title-padding: 30px;
+
+$gray-900: #546E7A;
 
 
-h1{
 
-    background-color: blue;
 
+.cover-text img {
+    width: 100%;
+}
+/* 文字を中央に揃える */
+.card-img-overlay{
+    padding: 0;
+    top: calc(50%);
+    text-align: left;
+    font-weight: bold;
+    color: white;
+    font-weight: bold; /*太字に*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.card-img-overlay{
+    h1{
+        font-size:3rem;
+    }
+    h5{
+        font-size:1rem;
+    }
 }
 
 .jumbotron {
-    background-image: url("../images/IMG_1289.jpg");
     background-size: cover;
-    background-position: center 60%;
+    background-position: center 80%;
 }
