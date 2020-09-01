@@ -19,5 +19,10 @@ RSpec.describe User, type: :model do
       @user.email = ''
       expect(@user.valid?).to eq(false)
     end
+
+    it '不正な表記のemailだとNG' do
+      @user.email = 'abcdefg'
+      expect(@user.valid?).to eq(false)
+    end
   end
 end
